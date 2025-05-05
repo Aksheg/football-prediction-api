@@ -5,7 +5,7 @@ import helmet from 'helmet';
 import morgan from 'morgan';
 import { initDatabase } from './config/database';
 import configureWebSocket from './config/websocket';
-// import routes from './routes';
+import routes from './routes';
 import { errorMiddleware } from './middleware/error.middleware';
 import { logger } from './utils/logger';
 import redis from './config/redis';
