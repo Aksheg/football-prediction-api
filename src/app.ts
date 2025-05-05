@@ -6,10 +6,10 @@ import morgan from 'morgan';
 import { initDatabase } from './config/database';
 import configureWebSocket from './config/websocket';
 import routes from './routes';
-import { errorMiddleware } from './middleware/error.middleware';
 import { logger } from './utils/logger';
 import redis from './config/redis';
 import WebSocketService from './websocket';
+import { errorMiddleware } from './middleware/error.middleware';
 
 class App {
   public app: express.Application;
